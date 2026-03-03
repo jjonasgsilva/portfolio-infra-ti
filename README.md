@@ -20,4 +20,10 @@ Este repositório documenta a construção do meu ambiente de servidores, do zer
 * **Troubleshooting:** Diagnóstico e correção de conflito de endereçamento no Virt-Manager, erro de rota `onlink` no cliente Debian e ajuste de DNS Forwarders no Windows Server.
 * **Persistência de Rede:** Aplicação de atributos de imutabilidade (`chattr`) para proteção de arquivos críticos de rede.
 
+### [Nível 4: Segurança Perimetral e Firewall Stateful](./nivel-4-config-firewall-ubuntu)
+* **Política Default DROP:** Transição para um modelo de segurança "Zero Trust", bloqueando todo o tráfego por padrão.
+* **Inspeção de Estado (Stateful):** Implementação de regras baseadas no estado das conexões (`ESTABLISHED, RELATED`).
+* **Segmentação de Tráfego:** Criação de exceções granulares para serviços essenciais (DNS, HTTP/HTTPS) por host.
+* **Auditoria e Logs:** Configuração de regras de log personalizadas no Kernel para monitoramento de tentativas de acesso não autorizadas.
+
 ---
